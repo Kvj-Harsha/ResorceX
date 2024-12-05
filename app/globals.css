@@ -1,0 +1,23 @@
+/* Include Tailwind CSS styles */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Define global CSS custom properties */
+:root {
+  --foreground-rgb: 255, 255, 255; /* White text color */
+  --background-color: #111827; /* Background color */
+}
+
+/* Apply styles to the body */
+body {
+  color: rgb(var(--foreground-rgb)); /* Set text color using custom property */
+  background-color: var(--background-color); /* Set background color using custom property */
+}
+
+/* Define utility class for text balance */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance; /* Balances text within its container */
+  }
+}

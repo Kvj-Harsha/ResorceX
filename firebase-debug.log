@@ -1,0 +1,48 @@
+[debug] [2024-04-24T06:48:17.637Z] ----------------------------------------------------------------------
+[debug] [2024-04-24T06:48:17.640Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\harsh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-04-24T06:48:17.641Z] CLI Version:   13.7.4
+[debug] [2024-04-24T06:48:17.641Z] Platform:      win32
+[debug] [2024-04-24T06:48:17.641Z] Node Version:  v20.11.1
+[debug] [2024-04-24T06:48:17.641Z] Time:          Wed Apr 24 2024 12:18:17 GMT+0530 (India Standard Time)
+[debug] [2024-04-24T06:48:17.641Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-24T06:48:17.730Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-24T06:48:17.731Z] > authorizing via signed-in user (cs23b1034@iiitr.ac.in)
+[debug] [2024-04-24T06:48:17.732Z] [iam] checking project resorcex for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-04-24T06:48:17.735Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/resorcex:testIamPermissions [none]
+[debug] [2024-04-24T06:48:17.735Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/resorcex:testIamPermissions x-goog-quota-user=projects/resorcex
+[debug] [2024-04-24T06:48:17.735Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/resorcex:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-04-24T06:48:19.742Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/resorcex:testIamPermissions 200
+[debug] [2024-04-24T06:48:19.743Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/resorcex:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-04-24T06:48:19.744Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/resorcex [none]
+[debug] [2024-04-24T06:48:20.370Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/resorcex 200
+[debug] [2024-04-24T06:48:20.370Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/resorcex {"projectId":"resorcex","projectNumber":"753665973881","displayName":"ResorceX","name":"projects/resorcex","resources":{"hostingSite":"resorcex","storageBucket":"resorcex.appspot.com","locationId":"asia-south1"},"state":"ACTIVE","etag":"1_e8c9cc71-2432-4e7b-bcc3-088c4729f265"}
+[debug] [2024-04-24T06:48:28.044Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/resorcex/sites pageToken=&pageSize=10
+[debug] [2024-04-24T06:48:29.232Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/resorcex/sites 200
+[debug] [2024-04-24T06:48:29.232Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/resorcex/sites {"sites":[{"name":"projects/resorcex/sites/resorcex","defaultUrl":"https://resorcex.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-04-24T06:48:29.233Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/resorcex/sites 
+[debug] [2024-04-24T06:48:29.804Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/resorcex/sites 200
+[debug] [2024-04-24T06:48:29.805Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/resorcex/sites {"sites":[{"name":"projects/resorcex/sites/resorcex","defaultUrl":"https://resorcex.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-04-24T06:48:29.805Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/resorcex/webApps/-/config [none]
+[debug] [2024-04-24T06:48:31.750Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/resorcex/webApps/-/config 200
+[debug] [2024-04-24T06:48:31.750Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/resorcex/webApps/-/config {"projectId":"resorcex","appId":"1:753665973881:web:7669efd378eea9d24d7ea8","storageBucket":"resorcex.appspot.com","locationId":"asia-south1","apiKey":"AIzaSyA6c5cn1EOQT3m6nlUzdCRneOrk1qAFYEc","authDomain":"resorcex.firebaseapp.com","messagingSenderId":"753665973881","measurementId":"G-FRYCF3GVP0"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-04-24T06:48:44.431Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/resorcex/sites/resorcex [none]
+[debug] [2024-04-24T06:48:45.489Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/resorcex/sites/resorcex 200
+[debug] [2024-04-24T06:48:45.489Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/resorcex/sites/resorcex {"name":"projects/resorcex/sites/resorcex","defaultUrl":"https://resorcex.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 14.1.4
+
+[info]    - Environments: .env.local
+
+
+[info] ^C
